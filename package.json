@@ -19,7 +19,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "build:npm": "set NODE_ENV=production && vue-cli-service build --target lib --name vue-cookie-consent ./src/Banner.vue"
+    "build:npm": "vue-cli-service build --target lib --name vue-cookie-consent ./src/Banner.vue"
   },
   "dependencies": {
     "core-js": "^3.6.4",
