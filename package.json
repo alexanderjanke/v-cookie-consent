@@ -1,0 +1,36 @@
+{
+  "name": "vue-cookies-consent",
+  "version": "1.0.0",
+  "description": "Simple cookie consent banner",
+  "keywords": [
+    "vue",
+    "cookie",
+    "consent"
+  ],
+  "repository": "https://github.com/alexanderjanke/vue-cookies-consent",
+  "bugs": "https://github.com/alexanderjanke/vue-cookies-consent/issues",
+  "license": "Apache-2.0",
+  "private": false,
+  "main": "./dist/vue-cookie-consent.common.js",
+  "unpkg": "dist/vue-cookie-consent.umd.min.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "build:npm": "set NODE_ENV=production && vue-cli-service build --target lib --name vue-cookie-consent ./src/Banner.vue"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.6",
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
