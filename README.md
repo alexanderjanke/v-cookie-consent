@@ -1,4 +1,4 @@
-# vue-cookie-consent
+# vue-cookies-consent
 
 ![](https://i.imgur.com/0A3O6s1.png)
 
