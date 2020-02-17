@@ -1,19 +1,19 @@
-# vue-cookies-consent
+# v-cookie-consent
 
 ![](https://i.imgur.com/0A3O6s1.png)
 
 ## Install
 
-`npm install vue-cookies-consent`
+`npm install v-cookie-consent`
 
 ```
 // yourVueFile.vue
 
-import VueCookieConsent from "vue-cookies-consent";
+import CookieConsent from "v-cookie-consent";
 
 export default {
   components: {
-    VueCookieConsent
+    CookieConsent
   }
 }
 ```
@@ -26,7 +26,7 @@ export default {
 
 <template>
   <div id="app">
-    <VueCookieConsent></VueCookieConsent>
+    <CookieConsent></CookieConsent>
   </div>
 </template>
 ```
@@ -40,35 +40,35 @@ If no consent was found, the banner will show.
 ### Default slot
 
 ```
-<VueCookieConsent>
+<CookieConsent>
  <div>
    This will replace the main text and all stylings relevant to the text
  </div>
-</VueCookieConsent>
+</CookieConsent>
 ```
 
 ### Link slot
 
 ```
-<VueCookieConsent>
+<CookieConsent>
   <template v-slot:link>
     <div>
       This will replace the "Learn more" link and all stylings relevant to the link
     </div>
   </template>
-</VueCookieConsent>
+</CookieConsent>
 ```
 
 ### Button slot
 
 ```
-<VueCookieConsent>
+<CookieConsent>
   <template v-slot:button>
     <button>
       This will replace the consent-button and all stylings relevant to the button
     </button>
   </template>
-</VueCookieConsent>
+</CookieConsent>
 ```
 
 # Properties
@@ -86,8 +86,8 @@ If no consent was found, the banner will show.
 ## Overwriting text but keeping default styling
 
 ```
-<VueCookieConsent text="This is my new main text" link-text="Click here for more info" button-text="Okay">
-</VueCookieConsent>
+<CookieConsent text="This is my new main text" link-text="Click here for more info" button-text="Okay">
+</CookieConsent>
 ```
 
 This result in the following banner:<br />
@@ -96,15 +96,15 @@ This result in the following banner:<br />
 ## Changing the localStorage value
 
 ```
-<VueCookieConsent storage-name="myCustomNameInLocalStorage">
-</VueCookieConsent>
+<CookieConsent storage-name="myCustomNameInLocalStorage">
+</CookieConsent>
 ```
 
 ## Prevent consent and emit event instead
 
 ```
-<VueCookieConsent prevent-consent @consented="yourHandler">
-</VueCookieConsent>
+<CookieConsent prevent-consent @consented="yourHandler">
+</CookieConsent>
 ```
 
 Note: The emit does not pass any data.
@@ -115,7 +115,7 @@ No `!important` is being used. You can simply add your own classes to overwrite 
 
 ```
 <template>
-  <VueCookieConsent class="bg-salmon"></VueCookieConsent>
+  <CookieConsent class="bg-salmon"></CookieConsent>
 </template>
 
 <style>
